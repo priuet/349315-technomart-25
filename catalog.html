@@ -4,10 +4,10 @@
   <meta charset="utf-8">
  
   <title>КАТАЛОГ ТЕХНОМАРТ</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+
+  <meta name="" content="">
  
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/style.css">
 	<header class="main-header">
 		<div class="top-menu">
 			<span><img src="http://placehold.it/30x30" alt="" class="logo"></span>
@@ -25,6 +25,7 @@
 		</div>
 		<nav class="menu">
 			<ul>
+
 				<li>Главная</li>
 				<li>Компания</li>
 				<li>Каталог</li>
@@ -32,16 +33,31 @@
 				<li>Спецпредложения</li>
 				<li>Доставка</li>
 				<li>Контакты</li>
+
+				<a href="">Главная</a>
+				<a href="">Компания</a>
+				<a href="">Каталог</a>
+				<a href="">Новости</a>
+				<a href="">Спецпредложения</a>
+				<a href="">Доставка</a>
+				<a href="">Контакты</a>
+
 			</ul>
 		</nav>
 	</header>
 </head>
  
 <body>
-	<p class="section-header">ПЕРФОРАТОРЫ</p>
-	<p>каталог-инструменты-перфораторы</p>
+
+	<h1 class="section-header">ПЕРФОРАТОРЫ</h1>
+		<ul class="breadcrumbs">
+			<li><a href="index.html">ГЛАВНАЯ </a></li>
+			<li><a href="catalog.html">КАТАЛОГ</a></li>
+			<li><a href="catalog.html">ИНСТРУМЕНТЫ</a></li>
+			<li><a href="#" class="breadcrumbs-current">ПЕРФОРАТОРЫ</a></li>
+		</ul>
 	<!--боковая секция-->
-	<aside>
+	<aside class="filters">
 		<p>Фильтр</p>
 		<div>Цена:</div>
 		<p>ПРОИЗВОДИТЕЛИ:</p>
@@ -61,15 +77,14 @@
 	<!--конец боковой секции-->
 	<!--блок с товарами-->
 	<p>СОРТИРОВКА по цене по дате</p><!--не знаю какие тегом оформить, тут вроде должен быть список с радиоточками-->
-	<section class="product-card">
-		<figure class="product-img">
-			<img src="http://placehold.it/30x30" alt="">
-		</figure>
-		<figcaption>
-			<h4>ПЕРФОРАТОР BOSCH BFG 6000</h4>
+
+	<section class="products">
+		<div class="product-card">
+			<a href=""><img src="http://placehold.it/30x30" alt="" width="100" height="150"></a>
+			<h2><a href="">ПЕРФОРАТОР BOSCH BFG 6000</a></h2>
 			<p class="old-price">30500 Р.</p>
 			<p class="new-price">25500 Р.</p>
-		</figcaption>
+		</div>
 	</section>
 	<!--конец блока с товарами-->
 
@@ -95,22 +110,24 @@
 
 <footer>
 	<div>
-		<img src="http://placehold.it/100x30" class="logo">
+		<img src="http://placehold.it/30x30" class="logo">
 		<ul>
-			<li>Компания</li>
-			<li>новости</li>
-			<li>Каталог</li>
-			<li>Доставка</li>
-			<li>контакты</li>
+			<a href="">Компания</a>
+			<a href="">Каталог</a>
+			<a href="">Новости</a>
+			<a href="">Доставка</a>
+			<a href="">Контакты</a>
 		</ul>
 	</div>
 	<div>
 		<span>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8</span>
 		<ul>
-			<li>материалы</li>
-			<li>техника</li>
-			<li>инструмент</li>
-			<li>спецпредложения</li>
+
+			<a href="">материалы</a>
+			<a href="">техника</a>
+			<a href="">инструмент</a>
+			<a href="">Спецпредложения</a>
+
 		</ul>
 	</div>
 	<div>
