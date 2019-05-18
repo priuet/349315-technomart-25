@@ -7,13 +7,15 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
  
-<body style="background: #fff000">
+<body>
 	<header class="main-header">
 		<div class="top-menu">
 			<a href=""><img src="img/logo-technomart.svg" alt="логотип Техномарт"></a>
-			<input type="search" class="search"><a href="">Поиск:</a>
-			<a href=""><img src="img/icon-bookmark.svg" alt="">Закладки</a>
-			<a href=""><img src="img/icon-cart.svg" alt="">Корзина</a>
+			<form class="search">
+  				<input type="text" placeholder="Ты скажи чё те надо"><!--что тут ещё надо написать, чтобы типа отправить запрос поиска на сервер?-->
+  			</form>
+			<a href="">Закладки</a>
+			<a href="">Корзина</a>
 			<a href="" class="button">Оформить заказ</a>
 		</div>
 		<div class="second-menu">
@@ -50,7 +52,7 @@
 		<p>Контакты</p>
 		<p>Вы можете забрать товар сами, заехав в наш офис:</p>
 		<img src="img/map-mini.png" alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8" class="map">
-		<a href="" class="button">Заблудились? Напишите нам!</a>
+		<a href="" class="lost">Заблудились? Напишите нам!</a>
 	</div>
 
 <footer>
@@ -76,9 +78,9 @@
 	<div>
 		<p>2010-2017 Компания "Техномарт"</p> <p>Все права защищены</p>
 		<ul>
-			<li><a href="https://vk.com"><img src="img/icon-vk.svg" alt="vkontakte"></a></li>
-			<li><a href="https://facebook.com/"><img src="img/icon-fb.svg" alt="facebook"></a></li>
-			<li><a href="https://instagram.com/"><img src="img/icon-insta.svg" alt="inst"></a></li>
+			<li><a href="https://vk.com"></a></li>
+			<li><a href="https://facebook.com/"></a></li>
+			<li><a href="https://instagram.com/"></a></li>
 		</ul>
 		<p>Обратная связь: <a href="">mail@htmlacademy.ru</a></p>
 		<p>Разработано - <a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
@@ -113,13 +115,16 @@
 </section>
 
 <section class="modal modal-login">
-	<p>ваше имя:</p>
-	<input class="login-icon-name" type="text" placeholder="Имя" name="name">
-	<p>ваш E-mail:</p>
-	<input class="login-icon-email" type="text" placeholder="E-mail" name="email">
-	<p>ваше письмо:</p>
-	<input class="login-icon-letter" type="text" placeholder="текст письма" name="letter">
-	<button class="send" type="submit">ОТПРАВИТЬ</button>
+	<h3>Напишите нам!</h3>        
+		<form class="letter" action="" method="post">
+			<p>Ваше имя:</p>
+			<input class="login-icon-name" type="text" placeholder="Имя" name="name">
+			<p>Ваш E-mail:</p>
+			<input class="login-icon-email" type="text" placeholder="E-mail" name="email">
+			<p>Текст письма:</p>
+			<input class="login-icon-letter" type="text" placeholder="Проблемы какие-то?" name="letter">
+			<button class="send" type="submit">ОТПРАВИТЬ</button>
+		</form>
 </section>
 </body>
 </html>
