@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>КАТАЛОГ ТЕХНОМАРТ</title>
-  <meta name="" content="">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
 		<div class="top-menu">
-			<a><img src="img/logo-technomart.svg" alt="логотип Техномарт"></a>
-			<form class="search">
+			<a href="index.html"><img src="img/logo-technomart.svg" alt="логотип Техномарт"></a>
+			<form class="search" action="https://echo.htmlacademy.ru">
   				<input type="text" placeholder="Ты скажи чё те надо"><!--что тут ещё надо написать, чтобы типа отправить запрос поиска на сервер?-->
   			</form>			
   			<a href="">Закладки</a>
@@ -36,38 +35,52 @@
 			</ul>
 		</nav>
 	</header>
-	<h1 class="section-header">ПЕРФОРАТОРЫ</h1>
+	<h1 class="section-header">Перфораторы</h1>
 		<ul class="breadcrumbs">
-			<li><a href="index.html">ГЛАВНАЯ </a></li>
-			<li><a href="catalog.html">КАТАЛОГ</a></li>
-			<li><a href="catalog.html">ИНСТРУМЕНТЫ</a></li>
-			<li><p class="breadcrumbs-current">ПЕРФОРАТОРЫ</p></li>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="catalog.html">Каталог</a></li>
+			<li><a href="catalog.html">Инструменты</a></li>
+			<li class="breadcrumbs-current">Перфораторы</li>
 		</ul>
 	<!--боковая секция-->
 	<aside class="filters">
 		<p>Фильтр</p>
 		<div>Цена:</div>
-		<p>ПРОИЗВОДИТЕЛИ:</p>
+		<fieldset>
+		<legend>Производители:</legend>
 			<ul>
-				<li>BOSCH</li>
-				<li>MAKITA</li>
-				<li>HITACHI</li>
-				<li>DEWALT</li>
+				<li><label><input type="checkbox" name="power" value="">Bosch</label></li>
+				<li><label><input type="checkbox" name="power" value="">Makita</label></li>
+				<li><label><input type="checkbox" name="power" value="">Hitachi</label></li>
+				<li><label><input type="checkbox" name="power" value="">Dewalt</label></li>
 			</ul>
-		<p>ПИТАНИЕ:</p>
+		<legend>Питание:</legend>
 		<ul>
-			<li>АККУМУЛЯТОРНЫЕ</li>
-			<li>СЕТЕВЫЕ</li>
+			<li><label><input type="radio" name="power" value="">Аккумуляторные</label></li>
+			<li><label><input type="radio" name="power" value="">Сетевые</label></li>
 		</ul>
-		<button class="button" type="submit">ПОКАЗАТЬ</button>
+		<button class="button" type="submit">Показать</button>
+		</fieldset>
 	</aside>
 	<!--конец боковой секции-->
 	<!--блок с товарами-->
-	<p>СОРТИРОВКА по цене по дате</p><!--не знаю какие тегом оформить, тут вроде должен быть список с радиоточками-->
+	<p>Сортировка по цене по дате</p><!--не знаю какие тегом оформить, тут вроде должен быть список с радиоточками-->
 	<section class="products">
 		<div class="product-card">
 			<a href=""><img src="img/perforator_1.png" alt="ПЕРФОРАТОР BOSCH BFG 6000"></a>
-			<h2><a href="">ПЕРФОРАТОР BOSCH BFG 6000</a></h2>
+			<h2><a href="">Перфоратор Bosch BFG 6000</a></h2>
+			<p class="old-price">30500 Р.</p>
+			<p class="new-price">25500 Р.</p>
+		</div>
+		<div class="product-card">
+			<a href=""><img src="img/perforator_1.png" alt="ПЕРФОРАТОР BOSCH BFG 6000"></a>
+			<h2><a href="">Перфоратор Bosch BFG 6000</a></h2>
+			<p class="old-price">30500 Р.</p>
+			<p class="new-price">25500 Р.</p>
+		</div>
+		<div class="product-card">
+			<a href=""><img src="img/perforator_1.png" alt="ПЕРФОРАТОР BOSCH BFG 6000"></a>
+			<h2><a href="">Перфоратор Bosch BFG 6000</a></h2>
 			<p class="old-price">30500 Р.</p>
 			<p class="new-price">25500 Р.</p>
 		</div>
@@ -113,13 +126,19 @@
 	<div>
 		<p>2010-2017 Компания "Техномарт"</p> <p>Все права защищены</p>
 		<ul>
-			<li><a href="https://vk.com"></a></li>
-			<li><a href="https://facebook.com/"></a></li>
-			<li><a href="https://instagram.com/"></a></li>
+			<li><a href="https://vk.com">VK</a></li>
+			<li><a href="https://facebook.com/">FB</a></li>
+			<li><a href="https://instagram.com/">INST</a></li>
 		</ul>
 		<p>Обратная связь: <a href="">mail@htmlacademy.ru</a></p>
 		<p>Разработано - <a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
 	</div>
 </footer>
+<!--модальное окно добавить в корзину-->
+<section class="modal addtocart">
+	<p>Товар добавлен в корзину!</p>
+		<a href=""><button class="button" type="submit">Оформить заказ</button></a>
+		<a href=""><button class="button" type="submit">Продолжить покупки</button></a>
+</section>
 </body>
 </html>
