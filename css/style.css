@@ -114,3 +114,6 @@ nav a {
 .inst {
   background-image: url(img/icon-insta.svg);
 }
+.yellow {
+  font-color: #ffd180; /*цвет не меняется от этого свойства*/
+}
