@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Cuprum, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  background-color: #fff;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+@font-face {
+font-family: Cuprum, "PT Sans";
+src: url(fonts/cuprum.woff2), 
+      url(fonts/cuprum.woff), 
+      url(fonts/cuprumbold.woff2), 
+      url(fonts/cuprumbold.woff), 
+      url(fonts/cuprumbolditalic.woff), 
+      url(fonts/cuprumbolditalic.woff2), 
+      url(fonts/cuprumitalic.woff), 
+      url(fonts/cuprumitalic.woff2)
+      url(fonts/ptsans.woff),
+      url(fonts/ptsans.woff2),
+      url(fonts/ptsansbold.woff),
+      url(fonts/ptsansbold.woff2);
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+}
+
+.top-menu,
+nav {
+  background-color: #293449;
+  font-style: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  list-style: none;
+}
+.intro {
+  color: #ef6974;
+}
+.intro-phone {
+  color: #ee3643;
+  background-image: url(img/icon-phone.svg);
+}
+.intro-address {
+  color: #32425c;
+}
+button.make-order {
+  background-color: #63a63e;
+  position: absolute;
+  left: 920px;
+  top: 0px;
+  width: 150px;
+  height: 42px;
+  z-index: 220;
+  border-style: none;
+}
+button.make-order:hover {
+  background-color: #5fbb2d;
+}
+button.make-order:focus {
+  background-color: #518534;
+}
+.logo {
+  background-color: #ee3643;
+  background-image: url(img/logo-technomart.svg);
+  position: absolute;
+  left: 130px;
+  top: -4px;
+  width: 220px;
+  height: 51px;
+  z-index: 229;
+}
+.search {
+  background-image: url(img/icon-search.svg);
+}
+.cart {
+  background-image: url(img/icon-cart.svg);
+}
+.bookmarks {
+  background-image: url(img/icon-bookmark.svg);
+}
+nav a {
+  font-style: #fff;
+  list-style: none;
+  text-decoration: none;
+}
+.top-footer{
+  background-color: #32425c; 
+  font-style: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+.bottom-footer {
+  background-color: #293449;
+  font-style: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+.vk {
+  background-image: url(img/icon-vk.svg);
+}
+.fb {
+  background-image: url(img/icon-fb.svg);
+}
+.inst {
+  background-image: url(img/icon-insta.svg);
+}
