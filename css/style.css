@@ -11,21 +11,34 @@ body {
   background-repeat: no-repeat;
 }
 @font-face {
-font-family: Cuprum, "PT Sans";
-src: url(fonts/cuprum.woff2), 
-      url(fonts/cuprum.woff), 
-      url(fonts/cuprumbold.woff2), 
-      url(fonts/cuprumbold.woff), 
-      url(fonts/cuprumbolditalic.woff), 
-      url(fonts/cuprumbolditalic.woff2), 
-      url(fonts/cuprumitalic.woff), 
-      url(fonts/cuprumitalic.woff2)
-      url(fonts/ptsans.woff),
-      url(fonts/ptsans.woff2),
-      url(fonts/ptsansbold.woff),
-      url(fonts/ptsansbold.woff2);
+font-family: "Cuprum";
+src: url("fonts/cuprum.woff2") format("woff2"), 
+      url("fonts/cuprum.woff") format("woff"); 
+      font-weight:normal;
+      font-style: normal;
 }
-a {
+@font-face{
+font-family: "Cuprum";
+src: url("fonts/cuprumbold.woff2") format("woff2"),
+      url("fonts/cuprumbold.woff") format("woff");
+      font-weight: bold;
+      font-style: normal;
+}
+@font-face{
+font-family: "PT Sans";
+src:url("fonts/ptsans.woff") format("woff"),
+      url(fonts/ptsans.woff2) format("woff2");
+      font-style: normal;
+      font-weight: normal;
+}
+@font-face{
+font-family: "PT Sans";
+src: url("fonts/ptsansbold.woff") format("woff"),
+      url("fonts/ptsansbold.woff2") format("woff2");
+      font-weight: bold;
+      font-style: normal;
+}
+a{
   text-decoration: none;
   list-style: none;
   color: #ffffff;
