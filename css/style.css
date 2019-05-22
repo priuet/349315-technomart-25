@@ -2,11 +2,9 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Cuprum, sans-serif;
+  font-family: "PT Sans", Cuprum;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
   
   background-color: #fff;
   background-position: top center;
@@ -27,17 +25,24 @@ src: url(fonts/cuprum.woff2),
       url(fonts/ptsansbold.woff),
       url(fonts/ptsansbold.woff2);
 }
-
 a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
 }
+.main-header {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+}
+li menu:hover {
+  background-color: #293449;
+}
 
 .top-menu,
 nav {
   background-color: #293449;
-  font-style: #ffffff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 16px;
   display: inline-block;
@@ -55,20 +60,18 @@ nav {
 }
 button.make-order {
   background-color: #63a63e;
-  position: absolute;
-  left: 920px;
-  top: 0px;
   width: 150px;
   height: 42px;
-  z-index: 220;
   border-style: none;
+  color: #fff;
 }
 button.make-order:hover {
   background-color: #5fbb2d;
 }
-button.make-order:focus {
+button.make-order:active {
   background-color: #518534;
 }
+
 .logo {
   background-color: #ee3643;
   background-image: url(img/logo-technomart.svg);
@@ -77,7 +80,13 @@ button.make-order:focus {
   top: -4px;
   width: 220px;
   height: 51px;
-  z-index: 229;
+  border-bottom: #b52933 5px solid; 
+}
+.logo:hover {
+  background-color: #ca2c37;
+}
+.logo:active {
+  background-color: #ba2732;
 }
 .search {
   background-image: url(img/icon-search.svg);
@@ -89,24 +98,22 @@ button.make-order:focus {
   background-image: url(img/icon-bookmark.svg);
 }
 nav a {
-  font-style: #fff;
+  color: #fff;
   list-style: none;
   text-decoration: none;
 }
 .top-footer{
   background-color: #32425c; 
-  font-style: #fff;
   text-decoration: none;
   display: inline-block;
 }
 .bottom-footer {
   background-color: #293449;
-  font-style: #fff;
   text-decoration: none;
   display: inline-block;
 }
 .vk {
-  background-image: url(img/icon-vk.svg);
+  background-image: url("img/icon-vk.svg");
 }
 .fb {
   background-image: url(img/icon-fb.svg);
@@ -114,6 +121,36 @@ nav a {
 .inst {
   background-image: url(img/icon-insta.svg);
 }
-.yellow {
-  font-color: #ffd180; /*цвет не меняется от этого свойства*/
+
+li.yellow,
+a.bottom,
+a.yellow  {
+  color: #ffd180;
+}
+
+footer {
+  font-size: 18px;
+  font-family: "Cuprum";
+  font-weight: normal;
+  line-height: 1;
+  color: rgb(241, 245, 247);
+}
+footer ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.lost,
+.more {
+  background-color: #ee3643;
+  width: 300px;
+  height: 38px;
+  color: rgb(255, 255, 255);
+}
+
+
+.modal-login,
+.button-login,
+.addtocart {
+  display: none;
 }
