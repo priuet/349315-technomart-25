@@ -38,11 +38,22 @@ src: url("fonts/ptsansbold.woff") format("woff"),
       font-weight: bold;
       font-style: normal;
 }
-a{
+a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
 }
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+}
+.main-header li,
+footer li {
+display: inline;
+}
+
+
+
 .main-header {
   list-style: none;
   text-decoration: none;
@@ -62,6 +73,8 @@ nav {
 .intro {
   color: #ef6974;
 }
+
+
 .intro-phone {
   color: #ee3643;
   background-image: url(../img/icon-phone.svg);
