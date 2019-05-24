@@ -1,10 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-
-  font-family: "PT Sans", Cuprum;
+  
+  font-family: "Cuprum", "PT Sans";
   font-size: 14px;
   line-height: 24px;
+  font-weight: normal;
   
   background-color: #fff;
   background-position: top center;
@@ -12,29 +13,29 @@ body {
 }
 @font-face {
 font-family: "Cuprum";
-src: url("fonts/cuprum.woff2") format("woff2"), 
-      url("fonts/cuprum.woff") format("woff"); 
+src: url("../fonts/cuprum.woff2") format("woff2"), 
+      url("../fonts/cuprum.woff") format("woff"); 
       font-weight:normal;
       font-style: normal;
 }
 @font-face{
 font-family: "Cuprum";
-src: url("fonts/cuprumbold.woff2") format("woff2"),
-      url("fonts/cuprumbold.woff") format("woff");
+src: url("../fonts/cuprumbold.woff2") format("woff2"),
+      url("../fonts/cuprumbold.woff") format("woff");
       font-weight: bold;
       font-style: normal;
 }
 @font-face{
 font-family: "PT Sans";
-src:url("fonts/ptsans.woff") format("woff"),
-      url(fonts/ptsans.woff2) format("woff2");
+src:url("../fonts/ptsans.woff") format("woff"),
+      url(../fonts/ptsans.woff2) format("woff2");
       font-style: normal;
       font-weight: normal;
 }
 @font-face{
 font-family: "PT Sans";
-src: url("fonts/ptsansbold.woff") format("woff"),
-      url("fonts/ptsansbold.woff2") format("woff2");
+src: url("../fonts/ptsansbold.woff") format("woff"),
+      url("../fonts/ptsansbold.woff2") format("woff2");
       font-weight: bold;
       font-style: normal;
 }
@@ -68,6 +69,7 @@ nav {
   text-decoration: none;
   font-size: 16px;
   list-style: none;
+  font-family: "Cuprum";
 }
 .intro {
   color: #ef6974;
@@ -85,7 +87,12 @@ nav {
   color: #32425c;
 }
 button.make-order {
+  font-size: 17px;
+  font-family: "Cuprum";
   background-color: #63a63e;
+  color: rgb(255, 255, 255);
+  line-height: 1.059;
+  text-align: left;
   width: 150px;
   min-height: 42px;
   border-style: none;
@@ -93,6 +100,10 @@ button.make-order {
   margin: 10px;
   padding: 20px;
 }
+
+
+
+
 button.make-order:hover {
   background-color: #5fbb2d;
 }
@@ -131,19 +142,39 @@ button.make-order:active {
   background-image: url(../img/icon-cart.svg);  
   background-position: top center;
   background-repeat: no-repeat;
-
+}
+.cart:hover {
+  background-color: #212a3a;
 }
 .bookmarks {
   background-image: url(../img/icon-bookmark.svg);  
   background-position: top center;
   background-repeat: no-repeat;
-
+}
+.bookmarks:hover {
+  background-color: #212a3a;
 }
 nav a {
   color: #fff;
   list-style: none;
   text-decoration: none;
 }
+nav.menu {
+  font-size: 17px;
+  font-family: "Cuprum";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: center;
+  height: 60px;
+}
+ a.menu {
+  margin: 20px; /*не получается отступ по краям, всё равно приклеен текст к верху*/
+}
+
+
+
+
+/*footer styles*/
 .footer-1{
   background-color: #32425c; 
   text-decoration: none;
@@ -152,6 +183,16 @@ nav a {
   background-color: #293449;
   text-decoration: none;
 }
+.footer-1 ul:hover {
+  text-decoration: underline;
+}
+.footer1 ul:active {
+  font-size: 18px;
+  font-family: "Cuprum";
+  color: rgba(241, 245, 247, 0.502);
+  line-height: 1.333;
+}
+
 .vk {
   background-image: url(../img/icon-vk.svg);  
   background-position: top center;
@@ -178,7 +219,7 @@ a.yellow  {
 
 footer {
   font-size: 18px;
-  /*font-family: "Cuprum";*/
+  font-family: "PT Sans";
   font-weight: normal;
   line-height: 1;
   color: rgb(241, 245, 247);
@@ -186,6 +227,17 @@ footer {
 footer ul {
   list-style: none;
   text-decoration: none;
+}
+.bottom-info {
+  color: #ffd180;
+  text-decoration: none;
+}
+.bottom-info:hover {
+  color: #ffd180;
+  text-decoration: underline;
+}
+.bottom-info:active {
+  color: #ee3643;
 }
 
 .lost,
@@ -196,9 +248,9 @@ footer ul {
   color: rgb(255, 255, 255);
   margin: 10px;
   padding: 20px;
-
-
 }
+
+
 
 .visually-hidden {
   visibility: hidden;
