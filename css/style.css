@@ -49,8 +49,7 @@ ul {
 }
 .main-header li,
 footer li {
-display: inline;
-}
+display: inline;}
 
 
 
@@ -88,9 +87,11 @@ nav {
 button.make-order {
   background-color: #63a63e;
   width: 150px;
-  height: 42px;
+  min-height: 42px;
   border-style: none;
   color: #fff;
+  margin: 10px;
+  padding: 20px;
 }
 button.make-order:hover {
   background-color: #5fbb2d;
@@ -101,14 +102,16 @@ button.make-order:active {
 
 .logo {
   background-color: #ee3643;
-  position: absolute;
   left: 130px;
   top: -4px;
   width: 220px;
-  height: 51px;
+  min-height: 51px;
   border-bottom: #b52933 5px solid; 
   background-position: top center;
   background-repeat: no-repeat;
+  margin: 10px;
+  padding: 20px;
+
 
 }
 .logo:hover {
@@ -189,8 +192,16 @@ footer ul {
 .more {
   background-color: #ee3643;
   width: 300px;
-  height: 38px;
+  min-height: 38px;
   color: rgb(255, 255, 255);
+  margin: 10px;
+  padding: 20px;
+
+
+}
+
+.visually-hidden {
+  visibility: hidden;
 }
 
 .modal-login,

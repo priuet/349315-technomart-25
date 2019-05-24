@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Анастасия Чертова](https://up.htmlacademy.ru/htmlcss/25/user/349315).
-* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/id85590).
+* Наставник: [Арсений Березин](https://htmlacademy.ru/profile/id263537).
 
 
 ---
