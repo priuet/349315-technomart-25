@@ -253,7 +253,14 @@ footer ul {
 
 
 .visually-hidden {
-  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+  clip:rect(0 0 0 0);
 }
 
 .modal-login,
