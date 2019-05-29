@@ -1,6 +1,16 @@
 body {
-  margin: 0;
+  margin: 50;
   padding: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
   
   font-family: "Cuprum", "PT Sans";
   font-size: 14px;
@@ -13,29 +23,29 @@ body {
 }
 @font-face {
 font-family: "Cuprum";
-src: url("../fonts/cuprum.woff2") format("woff2"), 
-      url("../fonts/cuprum.woff") format("woff"); 
+src: url("./fonts/cuprum.woff2") format("woff2"), 
+      url("./fonts/cuprum.woff") format("woff"); 
       font-weight:normal;
       font-style: normal;
 }
 @font-face{
 font-family: "Cuprum";
-src: url("../fonts/cuprumbold.woff2") format("woff2"),
-      url("../fonts/cuprumbold.woff") format("woff");
+src: url("./fonts/cuprumbold.woff2") format("woff2"),
+      url("./fonts/cuprumbold.woff") format("woff");
       font-weight: bold;
       font-style: normal;
 }
 @font-face{
 font-family: "PT Sans";
-src:url("../fonts/ptsans.woff") format("woff"),
-      url(../fonts/ptsans.woff2) format("woff2");
+src:url("./fonts/ptsans.woff") format("woff"),
+      url("./fonts/ptsans.woff2") format("woff2");
       font-style: normal;
       font-weight: normal;
 }
 @font-face{
 font-family: "PT Sans";
-src: url("../fonts/ptsansbold.woff") format("woff"),
-      url("../fonts/ptsansbold.woff2") format("woff2");
+src: url("./fonts/ptsansbold.woff") format("woff"),
+      url("./fonts/ptsansbold.woff2") format("woff2");
       font-weight: bold;
       font-style: normal;
 }
@@ -48,10 +58,32 @@ ul {
   list-style: none; /*убираем маркеры списка*/
   margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
 }
+
 .main-header li,
 footer li {
-display: inline;}
+display: inline-flex;
+justify-content: space-between;}
 
+/*стили верхнего меню*/
+
+nav a {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  padding: 15px;
+}
+nav.menu-3 {
+  font-size: 17px;
+/*  font-family: "Cuprum";*/
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: center;
+  height: 60px;
+  display: inline-flex;
+}
+ a.menu-3 {
+  margin: 20px; /*не получается отступ по краям, всё равно приклеен текст к верху*/
+}
 
 
 .main-header {
@@ -62,15 +94,19 @@ li menu:hover {
   background-color: #293449;
 }
 
-.top-menu,
-nav {
+.menu-1,
+nav.menu-3 {
   background-color: #293449;
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
   list-style: none;
-  font-family: "Cuprum";
+ /* font-family: "Cuprum";*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .intro {
   color: #ef6974;
 }
@@ -78,7 +114,7 @@ nav {
 
 .intro-phone {
   color: #ee3643;
-  background-image: url(../img/icon-phone.svg);
+  background-image: url("../img/icon-phone.svg");
   background-position: top center;
   background-repeat: no-repeat;
 
@@ -88,21 +124,18 @@ nav {
 }
 button.make-order {
   font-size: 17px;
-  font-family: "Cuprum";
+/*  font-family: "Cuprum";*/
   background-color: #63a63e;
   color: rgb(255, 255, 255);
   line-height: 1.059;
   text-align: left;
-  width: 150px;
-  min-height: 42px;
+  /*width: 150px;
+  min-height: 42px;*/
   border-style: none;
   color: #fff;
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
 }
-
-
-
 
 button.make-order:hover {
   background-color: #5fbb2d;
@@ -115,13 +148,13 @@ button.make-order:active {
   background-color: #ee3643;
   left: 130px;
   top: -4px;
-  width: 220px;
-  min-height: 51px;
+  /*width: 220px;
+  min-height: 51px;*/
   border-bottom: #b52933 5px solid; 
   background-position: top center;
   background-repeat: no-repeat;
-  margin: 10px;
-  padding: 20px;
+  margin: 5px;
+  padding: 10px;
 
 
 }
@@ -132,44 +165,33 @@ button.make-order:active {
   background-color: #ba2732;
 }
 .search {
-  background-image: url(../img/icon-search.svg);  
+  background-image: url("../img/icon-search.svg");  
   background-position: top center;
   background-repeat: no-repeat;
 
 
 }
 .cart {
-  background-image: url(../img/icon-cart.svg);  
   background-position: top center;
   background-repeat: no-repeat;
+}
+.cart::before {
+  background-image: url("../img/icon-cart.svg");  
 }
 .cart:hover {
   background-color: #212a3a;
 }
 .bookmarks {
-  background-image: url(../img/icon-bookmark.svg);  
   background-position: top center;
   background-repeat: no-repeat;
+}
+.bookmarks::before {
+  background-image: url("../img/icon-bookmark.svg");
 }
 .bookmarks:hover {
   background-color: #212a3a;
 }
-nav a {
-  color: #fff;
-  list-style: none;
-  text-decoration: none;
-}
-nav.menu {
-  font-size: 17px;
-  font-family: "Cuprum";
-  color: rgb(255, 255, 255);
-  line-height: 1;
-  text-align: center;
-  height: 60px;
-}
- a.menu {
-  margin: 20px; /*не получается отступ по краям, всё равно приклеен текст к верху*/
-}
+
 
 
 
@@ -194,19 +216,19 @@ nav.menu {
 }
 
 .vk {
-  background-image: url(../img/icon-vk.svg);  
+  background-image: url("./img/icon-vk.svg");  
   background-position: top center;
   background-repeat: no-repeat;
 
 }
 .fb {
-  background-image: url(../img/icon-fb.svg);  
+  background-image: url("../img/icon-fb.svg");  
   background-position: top center;
   background-repeat: no-repeat;
 
 }
 .inst {
-  background-image: url(../img/icon-insta.svg);
+  background-image: url("../img/icon-insta.svg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -223,10 +245,12 @@ footer {
   font-weight: normal;
   line-height: 1;
   color: rgb(241, 245, 247);
+
 }
 footer ul {
   list-style: none;
   text-decoration: none;
+
 }
 .bottom-info {
   color: #ffd180;
