@@ -102,8 +102,8 @@ nav.menu-3 {
   font-size: 16px;
   list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: ;
 }
 .menu-2 {
   text-decoration: none;
@@ -178,6 +178,7 @@ button.make-order:active {
 .menu-1 {
   margin-bottom: 65px;
   margin-left: auto;
+  height: 42px;
 }
 
 }
@@ -270,7 +271,6 @@ button.make-order:active {
   font-family: "Cuprum";
   color: rgba(241, 245, 247, 0.502);
 }
-
 .smm {
   margin: 0 20px;
   border-radius: 50%;
@@ -314,12 +314,28 @@ footer ul {
 
 
 
-span.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
   width: 1px;
   height: 1px;
-  position: relative;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
-  visibility: hidden;
+}
+
+
+.smm:hover path,
+.smm:focus path {
+  fill: violet;
 }
 
 .modal-login,
@@ -336,7 +352,7 @@ span.visually-hidden {
   display: flex;
   justify-content: space-between;
 }
-aside {
+section .filters {
   padding: 0;
   margin: 20px;
   font-family: "PT Sans";
@@ -351,17 +367,29 @@ aside {
 .catalog-products {
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: 20px auto;
+  width: 700px;
+
 }
 .product-card {
   width: 220px;
   min-height: 160px;
+  box-shadow: 0 0 0 2px purple;
+  position: relative;
+  display: inline-block;
+  width: 218px;
   margin-right: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 0 0 2px purple;
+  
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  
+  border: 1px solid #ccc;
 }
+
 a.product-card {
-  color: #000;
+  color: green;
   text-decoration: none;
   font-size: 18px;
   font-family: "PT Sans";
@@ -369,6 +397,99 @@ a.product-card {
   line-height: 1.111;
   text-align: center;
 }
+.product-card .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  
+  width: 60px;
+  height: 60px;
+  
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-card .flag-new {
+  background: url("img/new-flag.png") no-repeat 0 0;
+}
+.product-card .actions {
+  display: none;
+}
+.product-card .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+.product-card .actions .buy,
+.product-card .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+  
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.product-card .actions .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+.product-card .actions {
+  display: none;
+}
+
+.product-card:hover .actions {
+  display: block;
+}
+.product-card .image {
+  width: 218px;
+  height: 168px;
+}
+.product-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.catalog-products {
+  font-size: 0;
+}
+
+.product-card {
+  font-size: 16px;
+}
+.product-card .image img {
+  max-width: 100%;
+}
+.product-card .title {
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;    
+}
+
 .old-price {
   font-size: 18px;
   font-family: "PT Sans";
@@ -376,22 +497,32 @@ a.product-card {
   font-weight: bold;
   text-decoration: line-through;
   text-transform: uppercase;
-  line-height: 1.059;
+  line-height: 1.1;
   text-align: center;
-  left: 712.029px;
-  top: 783.432px;
 }
-.new-price {
-  font-size: 18px;
-  font-family: "PT Sans";
-  color: #ee3643;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.059;
-  text-align: center;
-  left: 711.945px;
-  top: 821.432px;
-  outline: 2px blue solid;
+.product-card .new-price {
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  
+  color: white;
+  background: #ee3643;
+  border-radius: 5px;
+}
+.product-card .new-price:after {
+  content: "";
+  
+  position: absolute;
+  top: 0;
+  right: -20px;
+  
+  width: 0;
+  height: 0;
+  
+  border: 20px solid white;
+  border-left-color: #ee3643;
 }
 .category-info {
   padding: 40px;
@@ -413,9 +544,11 @@ a.product-card {
   margin: 0;
   list-style: none;
   color: chocolate;
+  display: flex;
 }
 .pagination-list a {
   color:green;
   font-weight: bold;
   font-size: 20px;
 }
+
