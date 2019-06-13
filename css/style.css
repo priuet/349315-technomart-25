@@ -1,52 +1,45 @@
 body {
   margin: 50;
   padding: 0;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   flex-direction: column;
-  font-family: "Cuprum", "PT Sans";
+  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
   
   background-color: #fff;
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 @font-face {
 font-family: "Cuprum";
-src: url("./fonts/cuprum.woff2") format("woff2"), 
-      url("./fonts/cuprum.woff") format("woff"); 
+src: url("../fonts/cuprum.woff2") format("woff2"), 
+      url("../fonts/cuprum.woff") format("woff"); 
       font-weight:normal;
       font-style: normal;
 }
 @font-face{
 font-family: "Cuprum";
-src: url("./fonts/cuprumbold.woff2") format("woff2"),
-      url("./fonts/cuprumbold.woff") format("woff");
+src: url("../fonts/cuprumbold.woff2") format("woff2"),
+      url("../fonts/cuprumbold.woff") format("woff");
       font-weight: bold;
       font-style: normal;
 }
 @font-face{
 font-family: "PT Sans";
-src:url("./fonts/ptsans.woff") format("woff"),
-      url("./fonts/ptsans.woff2") format("woff2");
+src:url("../fonts/ptsans.woff") format("woff"),
+      url("../fonts/ptsans.woff2") format("woff2");
       font-style: normal;
       font-weight: normal;
 }
 @font-face{
 font-family: "PT Sans";
-src: url("./fonts/ptsansbold.woff") format("woff"),
-      url("./fonts/ptsansbold.woff2") format("woff2");
+src: url("../fonts/ptsansbold.woff") format("woff"),
+      url("../fonts/ptsansbold.woff2") format("woff2");
       font-weight: bold;
       font-style: normal;
 }
 a {
   text-decoration: none;
-  list-style: none;
   /*color: #fff;*/
 }
 ul {
@@ -62,21 +55,22 @@ footer li {
   flex-wrap: wrap;
 }
 .main-header {
-  list-style: none;
-  text-decoration: none;
+  height: 320px;
+  width: 100%;   
+  background-color: #f4f7f9;
 }
 .menu-1 {
-  height: 43px;/*по макету 43, а по факту не хватает такой высоты, надо больше*/
+  height: 45px;/*по макету 43, а по факту не хватает такой высоты, надо больше*/
   padding: 0 130px;
 }
-a.cart {
+.cart {
   width: 150px;
   text-align: center;
   font-size: 17px;
   outline: 2px solid violet;
   color: #fff;
 }
-a.cart::before {
+.cart::before {
   content: ""; /*поле контент оставляем пустым*/
   position: absolute; /*позиционирование*/
   width: 15px;
@@ -86,7 +80,7 @@ a.cart::before {
 .cart:hover {
   background-color: #212a3a;
 }
-a.bookmarks {
+.bookmarks {
   width: 150px;
   text-align: center;
   font-size: 17px;
@@ -94,7 +88,7 @@ a.bookmarks {
   margin: 0;
   color: #fff;
 }
-a.bookmarks:before {
+.bookmarks:before {
   content: ""; /*поле контент оставляем пустым*/
   position: absolute; /*позиционирование*/
   width: 15px;
@@ -105,7 +99,7 @@ a.bookmarks:before {
 .bookmarks:hover {
   background-color: #212a3a;
 }
-a.make-order {
+.make-order {
   width: 150px;
   text-align: center;
   font-size: 17px;
@@ -119,11 +113,10 @@ a.make-order {
   padding: 10px;
   outline: 2px solid violet;
 }
-
-a.make-order:hover {
+.make-order:hover {
   background-color: #5fbb2d;
 }
-a.make-order:active {
+.make-order:active {
   background-color: #518534;
 }
 .logo {
@@ -156,12 +149,8 @@ a.make-order:active {
 }
 nav.menu-3 {
   font-size: 17px;
-  font-family: "Cuprum";
-  color: rgb(255, 255, 255);
-  line-height: 1;
-  text-align: center;
-  height: 60px;
-  display: flex;
+
+
 }
  a.menu-3 {
   margin: 20px; 
@@ -188,7 +177,6 @@ li menu-1:hover {
 .menu-2 {
   height: 158px;
   text-decoration: none;
-  background-color: #f4f7f9;
   font-size: 16px;
   list-style: none;
   display: flex;
@@ -196,7 +184,7 @@ li menu-1:hover {
   justify-content: center;
   align-content: center;
 }
-div.intro {
+.intro {
   width: 250px;
   display: flex;
   flex-wrap: wrap;
@@ -210,7 +198,7 @@ div.intro {
   line-height: 1.4;
   text-align: left;
 }
-div.intro-contact {
+.intro-contact {
   width: 320px;
   text-align: center;
 }
@@ -224,7 +212,7 @@ div.intro-contact {
   background-position: top center;
 }
 
-a.intro-phone {
+.intro-phone {
   color: #ee3643;
   border: 3px solid violet;
   padding: 20px;
@@ -233,13 +221,13 @@ a.intro-phone {
   color: #32425c;
   font-size: 14px;
 }
-div.intro-link {
+.intro-link {
   width: 300px;
   display: inline-flex;
   align-content: left;
 }
-a.button-login,
-a.button-reg {
+.button-login,
+.button-reg {
   background-color: #fff;
   color: #000;
   padding: 15px;
@@ -247,83 +235,331 @@ a.button-reg {
   outline: 2px solid violet;
   height: 26px;
 }
-a.button-login::before {
+.button-login::before {
   background-image: url("../img/icon-login.svg");
-    content: ""; /*поле контент оставляем пустым*/
+  content: ""; /*поле контент оставляем пустым*/
   position: absolute; /*позиционирование*/
   width: 15px;
   height: 15px;
   background-repeat: no-repeat;
   background-position: top center;
 }
-.menu-3 {
+.menu-3-ul
+ {
   background-color: #32425c;
-  color: #ffffff;
+  color: #fff;
   font-size: 16px;
   text-align: center;
-  border-bottom: 3px solid #293449;
-  justify-content: space-around;/*получается вокруг кнопок отступы - не знаю как убрать*/
-}
-ul.menu-3 {
-  display: inline-block;
-  text-align: justify;
-}
-.menu-3 a {
-  padding: 20px;
-}
-.menu-3 a:hover{
-  background-color: #293449;
-}
-.blue {
-  background-color: #f4f7f9;
-  height: 45px;
+  font-family: "Cuprum","Arial",sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  padding: 0 20px;
+  margin: 0 auto;
+    border-bottom: 3px solid #293449;
 }
 
+.menu-3-a {
+  padding: 25px 10px;
+  color: white;
+}
+.menu-3-a:hover{
+  background-color: #293449;
+}
+
+
 /*стили основного контента*/
-section.index-links {
-  padding: 60px 130px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.index-links {
-  width: 300px;
-  margin: 10px;
-  padding: 30px;
-}
 .index-links p{
   font-size: 24px;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
 }
-.index-links a{
+.index-links-a{
+  color:#fff;
   box-shadow: 0 0 0 150px rgba(0, 0, 0, 0.25) inset;
-  padding: 15px;
+  padding: 10px;
   text-transform: uppercase;
   text-align: center;
-}
-
-
-div.materials {
-  background-color: #ffbf47;
-}
-div.tools {
-  background-color: #3bbce3;
-}
-div.tekniks {
-  background-color: #dc91d8;
-}
-div.discount {
-  background-color: #8ed78f;
-}
-div.delivery {
-  background-color: #ffc047;
 }
 .row-1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  margin: 60px 130px;
 }
+
+div.materials {
+  background-color: #ffbf47;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+}
+div.tools {
+  background-color: #3bbce3;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+}
+div.tekniks {
+  background-color: #dc91d8;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+}
+.row-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 130px;  
+}
+div.discount {
+  background-color: #8ed78f;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+}
+div.delivery {
+  background-color: #ffc047;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/*popular items style*/
+.popular-items {
+  margin: 60px 130px;
+}
+.popular-items-wrapper {
+  width: 960px;
+  height: 55px;
+  background-color: #f9f5f0;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-items-header {
+  font-size: 30px;
+  font-family: "Cuprum";
+  color: rgb(50, 66, 92);
+  text-transform: uppercase;
+  text-align: left;
+}
+.popular-items-a {
+  font-size: 18px;
+  font-family: "Cuprum";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.286;
+  text-align: center;
+  width: 255px;
+  background-color: #ee3643;
+  padding: 15px 55px;
+  float: right;
+}
+.popular-items-cards {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-items .card {
+  display: inline-block;
+  width: 218px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.popular-items .flag {
+  width: 60px;
+  height: 60px;  
+  text-indent: -1000px;
+  overflow: hidden;
+  position: absolute;
+}
+.popular-items .flag-new {
+  background: url("../img/new-flag.png") no-repeat 0 0;
+}
+.popular-items .product-card-title {
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px; 
+  color: green;   
+}
+.popular-items .old-price {
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #999;
+  text-decoration: line-through;
+}
+.popular-items .new-price {
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px; 
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
+.popular-items .new-price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+.popular-items .actions {
+  position: absolute;
+/*  top: 0;
+  left: 0;*/
+  
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+.popular-items .actions .buy,
+.popular-items .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.popular-items .actions .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+.popular-items .actions {
+  display: none;
+}
+
+.popular-items:hover .actions {
+  display: block;
+}
+
+/*popular brands style*/
+.popular-brands {
+  margin: 60px 130px;
+}
+.popular-brands-wrapper {
+  width: 960px;
+  height: 55px;
+  background-color: #f9f5f0;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.popular-brands-header {
+  font-size: 30px;
+  font-family: "Cuprum";
+  color: rgb(50, 66, 92);
+  text-transform: uppercase;
+  text-align: left;
+}
+.popular-brands-a {
+  font-size: 18px;
+  font-family: "Cuprum";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.286;
+  text-align: center;
+  width: 255px;
+  background-color: #ee3643;
+  padding: 15px 55px;
+  float: right;
+}
+.brand-logos {
+  padding: 20px 0 60px 0;
+  display:flex;
+  flex-wrap: wrap;
+  align-content: center;  
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-logo {
+  outline: #f9f5f0 2px solid;
+  padding: 40px;
+  margin: 10px;
+}
+
+/*features-style*/
+.features {
+  padding: 30px;
+  background-color: #f4f8fa;
+}
+.services-header .header {
+  font-size: 30px;
+  font-family: "Cuprum";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: left;
+}
+.services-header .p {
+  font-size: 14px;
+  font-family: "Cuprum";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  text-align: left;
+}
+.services-delivery .header {
+  font-size: 30px;
+  font-family: "Cuprum";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: left;
+}
+.services-delivery .p {
+  font-size: 14px;
+  font-family: "Cuprum";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  text-align: left;
+}
+.delivery-image {
+  float: right;
+}
+
+
+
+
+
+
+
+
+
 .container-info {
   display: flex;
   justify-content: space-between;
@@ -349,59 +585,6 @@ a.button-more {
 }
 
 
-/*слайдер*/
-.slider-box{}
-
-section.popular-brands {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-div.popular-brands-wrapper {
-  height: 90px;
-  background-color: #f9f5f0;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-p.popular-brands {
-  font-size: 30px;
-  font-family: "Cuprum";
-  color: rgb(50, 66, 92);
-  text-transform: uppercase;
-  line-height: 1;
-}
-a.popular-brands {
-  font-size: 14px;
-  font-family: "Cuprum";
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 1.286;
-  text-align: center;
-  background-color: #ee3643;
-  border-radius: 5px;
-}
-div.brand-logos {
-  justify-content: space-around;
-  align-items: center;
-  display: flex;
-    flex-wrap: wrap;
-
-}
-ul.brand-logos {
-  display:flex;
-  flex-wrap: wrap;
-  align-content: center;  
-  justify-content: space-around;
-  align-items: center;
-}
-li.brand-logo {
-  outline: #f9f5f0 2px solid;
-  padding: 50px;
-  margin: 10px;
-}
-
 
 /*footer styles*/
 .footer-wrapper {
@@ -410,33 +593,28 @@ li.brand-logo {
     line-height: 1.333;
     font-size: 18px;
     display: inline;
-    margin-top: 65px;/*ne rabotaet*/
 }
 .footer-1{
   background-color: #32425c; 
-  text-decoration: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
 }
 .footer-2 {
   background-color: #293449;
-  text-decoration: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .footer-1 ul:hover {
   text-decoration: underline;
 }
-.footer1 ul:active {
+.footer-1 ul:active {
   font-family: "Cuprum";
   color: rgba(241, 245, 247, 0.502);
 }
 .smm {
-  margin: 0 20px;
   border-radius: 50%;
   background-color: rgb(43, 42, 58);
   width: 42px;
@@ -445,13 +623,22 @@ li.brand-logo {
 
 
 
-li.yellow,
-a.bottom,
-a.yellow  a{
+.yellow-list {
   color: #ffd180;
 }
-.footer-1 a{
+.white-list {
   color: #fff;
+}
+.footer-logo{
+}
+.white-list {
+  width: 80%;
+}
+.footer-adress {
+  width: 330px;
+}
+.yellow-list {
+  width: 500px;
 }
 footer {
   font-size: 18px;
@@ -459,13 +646,8 @@ footer {
   font-weight: normal;
   line-height: 1;
   color: rgb(241, 245, 247);
-
 }
-footer ul {
-  list-style: none;
-  text-decoration: none;
 
-}
 .bottom-info {
   color: #ffd180;
   text-decoration: none;
@@ -477,8 +659,12 @@ footer ul {
 .bottom-info:active {
   color: #ee3643;
 }
-
-
+.footer-2-info {
+  width: 290px;
+}
+.footer-smm {
+  width: 137px;
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -511,14 +697,12 @@ input[type="radio"].visually-hidden {
 }
 
 /*стили каталога*/
-.catalog-container {
-  outline: red 5px solid;
-}
 .catalog-wrapper {
   display: flex;
   justify-content: space-between;
+  outline: red 5px solid;
 }
-section .filters {
+.filters {
   padding: 0;
   margin: 20px;
   font-family: "PT Sans";
@@ -529,13 +713,12 @@ section .filters {
   width: 146px;
   height: 44px;
   margin: 20px;
-}
+}/*
 .catalog-products {
   display: flex;
   justify-content: space-between;
   margin: 20px auto;
   width: 700px;
-
 }
 .product-card {
   width: 220px;
@@ -554,7 +737,7 @@ section .filters {
   border: 1px solid #ccc;
 }
 
-a.product-card {
+.product-card-title {
   color: green;
   text-decoration: none;
   font-size: 18px;
@@ -649,7 +832,7 @@ a.product-card {
 .product-card .image img {
   max-width: 100%;
 }
-.product-card .title {
+.product-card-title {
   min-height: 40px;
   padding: 0 25px;
   margin-top: 10px;
@@ -690,6 +873,13 @@ a.product-card {
   border: 20px solid white;
   border-left-color: #ee3643;
 }
+*/
+
+
+
+
+
+
 .category-info {
   padding: 40px;
   margin: auto;
@@ -719,7 +909,7 @@ a.product-card {
 }
 
 /*модальные окна*/
-section.modal.button-lost {
+.modal.button-lost {
   position: fixed;
   outline: 2px solid blueviolet;
   text-align: center;
@@ -728,7 +918,7 @@ section.modal.button-lost {
   width: 640px;
   height: 320px;
 }
-button.send {
+.send {
   background-color: #ee3643;
   font-size: 4px;
   font-family: "Cuprum";
