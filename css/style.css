@@ -102,18 +102,15 @@ footer li {
   background-color: #212a3a;
 }
 .make-order {
+  display: block;
   width: 150px;
   text-align: center;
-  font-size: 17px;
+  font-size: 20px;
   background-color: #63a63e;
   color: rgb(255, 255, 255);
   line-height: 1;
-  align-items: left;
-  border-style: none;
-  color: #fff;
-  margin: 10px;
-  padding: 10px;
-  outline: 2px solid violet;
+  margin: ;
+  padding: 20px;
 }
 .make-order:hover {
   background-color: #5fbb2d;
@@ -157,7 +154,11 @@ footer li {
   display: flex;
   justify-content: space-around;
 }
-
+.search {
+  background-color: #32425c;
+  border-style: none;
+  color: #fff;
+}
 /*стили второго меню*/
 
 .menu-2 {
@@ -187,6 +188,8 @@ footer li {
 .intro-contact {
   width: 330px;
   text-align: center;
+  padding: 25px;
+  box-sizing: border-box;
 }
 .intro-phone {
   color: #ee3643;
@@ -194,13 +197,13 @@ footer li {
   width: 430px;
   height: 50px;
   padding: 10px;
-  font-size: 16px;
+  font-size: 24px;
 }
 .intro-phone::before {
   background-image: url("../img/icon-phone.svg");
   content: ""; /*поле контент оставляем пустым*/
   display: inline-block;
-  margin-right: 35px;  
+  margin-right: 30px;  
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -306,13 +309,16 @@ footer li {
   padding: 25px;
   box-sizing: border-box;
   display: flex;
+
+}
+.index-links-img {
+  
 }
 .materials {
   background-color: #ffbf47;
 }
 .tools {
   background-color: #3bbce3;
-
 }
 .tekniks {
   background-color: #dc91d8;
@@ -971,7 +977,7 @@ input[type="radio"].visually-hidden {
 
 
 
-.modal-addtocart {
+.modal-login {
   top: 120px;
   left: 50%;
 
@@ -992,6 +998,9 @@ input[type="radio"].visually-hidden {
 
 }
 .modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
   width: 22px;
   height: 22px;
 
@@ -1002,3 +1011,44 @@ input[type="radio"].visually-hidden {
 
   cursor: pointer;
 }
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+
+  width: 19px;
+  height: 3px;
+  top: 10px;
+  left: 2px;
+  background-color: #d0d0d0;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+.modal-login h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+.modal-description {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.login-form p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+}
+
