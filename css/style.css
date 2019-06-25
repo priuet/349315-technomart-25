@@ -309,10 +309,15 @@ footer li {
   padding: 25px;
   box-sizing: border-box;
   display: flex;
-
 }
-.index-links-img {
-  
+.index-link-info {
+  width: 137px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.index-link-img {
+  margin-left: 50px;
 }
 .materials {
   background-color: #ffbf47;
@@ -537,14 +542,17 @@ footer li {
 }
 .brand-logo {
   outline: #f9f5f0 2px solid;
-  padding: 40px;
-  margin: 0 auto;
+  padding: 30px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .brand-logo-a {
-  width: 20%;
-  height: 95px;
-  outline: 2px solid red;
-}
+/*  width: 20%;
+*/  height: 95px;
+/*  outline: 2px solid red;
+*/}
 .brand-logo-img {
   width: 100%;
   height: auto;
@@ -647,6 +655,7 @@ footer li {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0 130px 50px 130px;
   }
 .footer-2 {
   background-color: #293449;
@@ -686,15 +695,19 @@ footer li {
   padding: 20px;
 }
 .footer-logo{
-/*  height: 60px;
-  width: 220px;
-*/}
+  width:18%;
+  margin-right: 170px;
+}
 .white-list {
-  width: 80%;
+  width: 550px;
+}
+.yellow-list {
+  width: 520px;
+  padding-left: 70px;
 }
 .footer-adress {
-  width: 330px;
-}
+/*  width: 26%;
+*/}
 .yellow-list,
 .white-list {
   padding: 0;
@@ -959,17 +972,15 @@ input[type="radio"].visually-hidden {
   text-align: left;
 }
 .pagination-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  color: chocolate;
+  padding: 10px;
+  margin: 10px;
   display: flex;
 }
-.pagination-list a {
-  color:green;
+/*.pagination-list a {
+  color: green;
   font-weight: bold;
   font-size: 20px;
-}
+}*/
 
 /*модальные окна*/
 
@@ -1147,5 +1158,21 @@ border: 7px solid white;
 .modal-map p {
   margin: 0;
 }
+.placeholder-search 
+{color: red;}
+.button-login-p {
+  padding: 10px;
+  box-sizing: border-box;
+}
+.my-orders,
+.my-account {
+  text-decoration: underline;
+}
+.my-orders:focus,
+.my-account:focus {
+  text-decoration: underline;
+  color: #ee3643;
+}
+
 
 
