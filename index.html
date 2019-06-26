@@ -406,37 +406,39 @@
       </label>
       <a class="restore" href="#">Я забыл пароль!</a>
     </p>
-    <button class="button" type="submit">Войти</button>
+    <button class="button-login" type="submit">Войти</button>
   </form>
-          <button class="modal-close" type="button">
-          Закрыть</button>
+	<button class="modal-close-added" type="button">Закрыть</button>
 </section>
 
-<section class="modal-button-lost">
-	<p>Напишите нам!!!</p>        
+<section class="modal-lost">
+	<p class="visually-hidden">Напишите нам!!!</p>  
+	<div class="modal-lost-flex">  
 		<form class="letter" action="https://echo.htmlacademy.ru"  method="post">
-			<p>Ваше имя:</p>
+			<p class="lost-p">Ваше имя:</p>
 			<label>
 				<input class="login-icon-name" type="text" placeholder="Имя Фамилия" name="name">
 			</label>
-			<p>Ваш E-mail:</p>
+			<p class="lost-p">Ваш E-mail:</p>
 			<label>
 				<input class="login-icon-email" type="email" placeholder="e-mail@example.ru" name="email">
 			</label>
-			<p>Текст письма:</p>
+			<p class="lost-p">Текст письма:</p>
 			<label>
 				<textarea class="login-icon-letter" placeholder="В свободной форме" name="letter"></textarea>
 			</label>
-			<div class="modal-grey">
-				<button class="button-lost-send" type="submit">Отправить</button>
-			</div>
-		</form>
+	</div>
+		<div class="grey-field">
+			<button class="button-lost-submit" type="submit">Отправить</button>
+		</div>
+	</form>
+		<button class="modal-close-added" type="button">Закрыть</button>
 </section>
 
-<section class="modal modal-map">
+<section class="modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
-  <p><img src="img/map.jpg" width="900" height="450" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-  <button class="modal-close" type="button">Закрыть</button>
+  	<img src="img/map.jpg" width="900" height="450" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+	<button class="modal-close-added" type="button">Закрыть</button>
 </section>
 
 

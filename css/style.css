@@ -144,6 +144,20 @@ footer li {
   width: 20px;
   height: 20px;
 }
+.placeholder-search 
+{color: red;}
+.button-login-p {
+  box-sizing: border-box;
+}
+.my-orders,
+.my-account {
+  text-decoration: underline;
+}
+.my-orders:focus,
+.my-account:focus {
+  text-decoration: underline;
+  color: #ee3643;
+}
 
 .menu-1 {
   background-color: #32425c;
@@ -766,12 +780,6 @@ input[type="radio"].visually-hidden {
   fill: violet;
 }
 
-.modal-login,
-.button-login,
-.addtocart {
-  /*display: none;
-}
-
 /*стили каталога*/
 .catalog-wrapper {
   display: flex;
@@ -984,60 +992,99 @@ input[type="radio"].visually-hidden {
 
 /*модальные окна*/
 
-/* Всплывающая форма */
+/* Модальоне окно Товар добавлен */
+.modal-addtocart {
+  margin: 0 auto;
+  width: 620px;
+  border-top: 5px solid #ee3643;
+  position: fixed;
+  top: 20%;
+  left: 30%;
 
-
-
-.modal-login {
-  top: 120px;
-  left: 50%;
-
-  width: 300px;
-  margin-left: -230px;
-  padding: 50px 80px;
-  width: 350px;
-}
-.modal-addtocart .submit {
-  padding: 20px;
-  background-color: deepskyblue;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
-.modal-close {
-  position: absolute;
-  top: 0;
-  right: -34px;
+.button-submit {
+  width: 220px;
+  background-color: #ee3643;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Cuprum", "Arial", sans-serif;
+  padding: 20px 50px;
+}
+.button-submit-continue {
+  background-color: #fff;
+  color: #000;
+  border-style: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Cuprum", "Arial", sans-serif;
+  padding: 20px 50px;
+}
+.grey-field {
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50%;
+  padding: 30px;
+}
+.added {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  padding: 30px;
+}
+.added-img {
+  margin-right: 30px;
+}
+
+.modal-close-added {
   width: 22px;
   height: 22px;
-
+  background-color: transparent;
+  border-style: none;
   font-size: 0;
-
-  background-color: red;
-  border: 0;
-
   cursor: pointer;
-}
-.modal-close::before,
-.modal-close::after {
-  content: "";
-
   position: absolute;
-
+  top: 0;
+  right: 24px;
+}
+.modal-close-added::before,
+.modal-close-added::after {
+  content: "";
+  position: absolute;
   width: 19px;
   height: 3px;
+  background-color: #ee3643;
   top: 10px;
   left: 2px;
-  background-color: #d0d0d0;
 }
-.modal-close::before {
+.modal-close-added::before {
   transform: rotate(45deg);
 }
-
-.modal-close::after {
+.modal-close-added::after {
   transform: rotate(-45deg);
+}
+
+/*Модальное окно Личный Кабинет*/
+.modal-login {
+  margin: 0 auto;
+  top: 120px;
+  left: 50%;
+  padding: 30px 50px;
+  width: 350px;
+  outline: solid violet;
 }
 .modal-login h2 {
   margin: 0;
@@ -1144,35 +1191,59 @@ input[type="radio"].visually-hidden {
   width: 100%;
   margin-right: 0;
 }
+
+/*Модальное окно Карта*/
 .modal-map {
-  top: 50%;
-  left: 50%;
-
-  width: 766px;
-  height: 561px;
-  margin-top: -280px;
-  margin-left: -390px;
-border: 7px solid white;
+  margin: 0 auto;
+  position: absolute;
+  top: 30%;
+  left: 20%;
 }
 
-.modal-map p {
-  margin: 0;
-}
-.placeholder-search 
-{color: red;}
-.button-login-p {
-  padding: 10px;
-  box-sizing: border-box;
-}
-.my-orders,
-.my-account {
-  text-decoration: underline;
-}
-.my-orders:focus,
-.my-account:focus {
-  text-decoration: underline;
-  color: #ee3643;
-}
+/*Модальное окно Напишите Нам*/
+.modal-lost {
+display: none;
 
+  margin: 0 auto;
+  width: 620px;
+  border-top: 5px solid #ee3643;
+  top: 20%;
+  left: 30%;
+  position: fixed;
+  background-color: #fff;
 
-
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+.button-lost-submit {
+  width: 220px;
+  background-color: #ee3643;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Cuprum", "Arial", sans-serif;
+  padding: 20px 50px;
+}
+.modal-lost-flex {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lost-p {
+  font-size: 12px;
+  text-transform: capitalize;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+.login-icon-name,
+.login-icon-email,
+.login-icon-letter {
+  width: auto;
+  padding: 15px;
+  border: 2px solid #f1f1f1;
+}
