@@ -15,7 +15,7 @@
 				</a>
 				<form class="search" action="https://echo.htmlacademy.ru">
 					<label class="search-label">
-  					<input class="search" type="text" placeholder="Поиск:" class="placeholder-search">
+  					<input type="text" placeholder="Поиск:" class="placeholder-search">
   				</label>
   			</form>
 				<a href="" class="bookmarks">Закладки:
@@ -275,10 +275,16 @@
 		<p class="services-header p">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными!</p>
 	</div>
 	<div class="features-wrapper">
+		<div class="features-list">
+			<ul class="features-list-ul">
+				<li class="features-list-li">Доставка</li>
+				<li class="features-list-li">Гарантия</li>
+				<li class="features-list-li">Кредит</li>
+			</ul>
+		</div>
 		<div class="services-delivery">
-			<a href="" class="services-delivery">Доставка</a>
-			<p class="services-delivery header">Доставка</p>
-			<p class="services-delivery p">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+			<a href="" class="services-delivery"></a>
+			<p class="services-delivery header">Доставка</p>	<p class="services-delivery p">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>	
 		</div>
 		<div class="features-img">	
 			<img src="./img/delivery.png" class="delivery-image" alt="картинка с грузовиком"/>
@@ -318,7 +324,13 @@
 		<br>
 		<a href=""  class="container-info-button">Заблудились? Напишите нам!</a>
 	</div>
-	</div>
+	<!--большая карта-->
+	<section class="modal-map">
+  		<h2 class="visually-hidden">Как до нас добраться</h2>
+  		<img src="img/map.jpg" width="900" height="450" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+		<button class="modal-close-added" type="button">Закрыть</button>
+	</section>
+</div>
 </main>
 
 <footer class="footer-wrapper">
@@ -386,7 +398,7 @@
 </footer>
 
 <!--модальные окна-->
-<section class="modal-login">
+<!--section class="modal-login">
 <h2>Личный кабинет</h2>
   <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -409,7 +421,7 @@
     <button class="button-login" type="submit">Войти</button>
   </form>
 	<button class="modal-close-added" type="button">Закрыть</button>
-</section>
+</section-->
 
 <section class="modal-lost">
 	<p class="visually-hidden">Напишите нам!!!</p>  
@@ -435,11 +447,7 @@
 		<button class="modal-close-added" type="button">Закрыть</button>
 </section>
 
-<section class="modal-map">
-  <h2 class="visually-hidden">Как до нас добраться</h2>
-  	<img src="img/map.jpg" width="900" height="450" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-	<button class="modal-close-added" type="button">Закрыть</button>
-</section>
+
 
 
 
