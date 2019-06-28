@@ -97,25 +97,31 @@
 				<img src="img/icon-3.svg" alt="картинка с трактором" class="index-link-img">
 		</div>
 	</div>
-<!--слайдер-->
-<div class="slider">
-  <input type="radio" name="switch" id="btn1" checked>
-  <input type="radio" name="switch" id="btn2">
-  
-  <div class="switch">
-    <label for="btn1"></label>
-    <label for="btn2"></label>
-  </div>
-  
-  <div class="slider-inner">
-    <div class="slides">
-      <img src="./img/slider-1.jpg"/>
-      <!--img src="./img/slider-2.jpg"/-->
-    </div>
-  </div>
-  <div class="prev"></div>
-  <div class="next"></div>
-</div>
+<!---слайдер-->
+<section class="slider">
+      <div class="container">
+        <div class="slider-controls">
+          <i class="active"></i>
+          <i></i>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <p class="slider-header">Дрели</p>
+            <p class="slider-p">Соседям на радость!</p>
+            <a class="slider-item-button button" href="#">Открыть каталог</a>
+          </li>
+          <li class="slider-item">
+            <p class="slider-header">Любим математику как никто другой</p>>
+            <p class="slider-p">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+        </ul>  
+        <div class="slider-arrow">
+    		<div class="slider-arrow-top"></div>
+   		 	<div class="slider-arrow-bottom"></div>
+		</div>
+      </div>
+    </section>
 <!--конец слайдера-->
 
 	<div class="row-2">
@@ -146,7 +152,6 @@
 <!--карточка товара-->
 			<div class="popular-items card">
         		<a href="catalog-item.html">
-        			<span class="flag flag-new">новинка</span>
 				      <div class="actions">
 				        <a href="#" class="buy">Купить</a>
 				        <a href="#" class="bookmark">В закладки</a>
@@ -197,7 +202,6 @@
 <!--карточка товара-->
 			<div class="popular-items card">
         		<a href="catalog-item.html">
-        			<span class="flag flag-new">новинка</span>
 				      <div class="actions">
 				        <a href="#" class="buy">Купить</a>
 				        <a href="#" class="bookmark">В закладки</a>
@@ -446,10 +450,6 @@
 	</form>
 		<button class="modal-close-added" type="button">Закрыть</button>
 </section>
-
-
-
-
 
 </body>
 </html>
