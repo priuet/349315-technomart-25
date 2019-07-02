@@ -100,6 +100,12 @@
 <!---слайдер-->
 <section class="slider">
       <div class="container">
+      	 	<a href="#" class="control_next">
+      	 		<img src="./img/icon-right.svg" alt="">
+      	 	</a>
+  			<a href="#" class="control_prev">
+  				<img src="./img/icon-left.svg" alt="">
+  			</a>
         <div class="slider-controls">
           <i class="active"></i>
           <i></i>
@@ -110,16 +116,12 @@
             <p class="slider-p">Соседям на радость!</p>
             <a class="slider-item-button button" href="#">Открыть каталог</a>
           </li>
-          <li class="slider-item">
+          <!--li class="slider-item">
             <p class="slider-header">Любим математику как никто другой</p>>
             <p class="slider-p">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a class="slider-item-button button" href="#">Узнать больше</a>
-          </li>
+          </li-->
         </ul>  
-        <div class="slider-arrow">
-    		<div class="slider-arrow-top"></div>
-   		 	<div class="slider-arrow-bottom"></div>
-		</div>
       </div>
     </section>
 <!--конец слайдера-->
@@ -226,8 +228,35 @@
 		<a href="catalog.html" class="popular-brands-a">все производители</a>
 	</div>
 	<!--блок с брендами-->
-	<div class="brand-logos">
-		<ul class="brand-logos">
+		<div class="brand-logos">
+			<div class="brand-logo">
+				<img src="./img/bosch.png" alt="логотип бредна макита" class="brand-logo-img">
+			</div>
+			<div class="brand-logo">
+				<img src="./img/makita.png" alt="логотип бредна макита" class="brand-logo-img">
+			</div>
+			<div class="brand-logo">
+				<img src="./img/dewalt.png" alt="логотип бредна макита" class="brand-logo-img">
+			</div>
+			<div class="brand-logo">
+				<img src="./img/interskol.png" alt="логотип бредна макита" class="brand-logo-img">
+			</div>
+			<div class="brand-logo">
+				<img src="./img/hitachi.png" alt="логотип бредна макита" class="brand-logo-img">
+			</div>
+			<div class="brand-logo">
+				<img src="./img/lg.png" alt="логотип бредна LG" class="brand-logo-img">
+			</div>
+			<div class="brand-logo">
+				<img src="./img/aeg.png" alt="логотип бредна AEG" class="brand-logo-img">
+			</div>
+			<div class="brand-logo">
+				<img src="./img/metabo.png" alt="логотип бредна макита" class="brand-logo-img">
+			</div>
+		</div>
+
+	<!--div class="brand-logos">
+		<ul class="brand-logos-ul">
 			<li class="brand-logo">
 				<a href="" class="brand-logo-a">
 					<img src="./img/bosch.png" alt="логотип бредна макита" class="brand-logo-img">
@@ -269,7 +298,7 @@
 				</a>
 			</li>
 		</ul><!--конец списка бреднов-->
-	</div>	<!--конец блок с брендами-->
+	</div-->	<!--конец блок с брендами-->
 </section>	<!--конец секция с брендами-->
 
 <section class="features"><!--блок преимущества-->   
@@ -281,30 +310,34 @@
 	<div class="features-wrapper">
 		<div class="features-list">
 			<ul class="features-list-ul">
-				<li class="features-list-li">Доставка</li>
+				<li class="features-list-li activ">Доставка</li>
 				<li class="features-list-li">Гарантия</li>
 				<li class="features-list-li">Кредит</li>
 			</ul>
 		</div>
 		<div class="services-delivery">
 			<a href="" class="services-delivery"></a>
-			<p class="services-delivery header">Доставка</p>	<p class="services-delivery p">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>	
+			<p class="services-delivery header">Доставка</p>	
+			<p class="services-delivery p">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>	
 		</div>
 		<div class="features-img">	
 			<img src="./img/delivery.png" class="delivery-image" alt="картинка с грузовиком"/>
 		</div>
 	</div>
-	<!--div class="services-garantie">
-		<a href="" class="services-garantie">Гарантия</a>
-		<p class="services-garantie">Гарантия</p>
-		<p class="services-garantie">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
-		<img src="./img/garantie.png" alt="картинка с garantie"/>
+	<!--div class="services-delivery">
+		<a href="" class="services-delivery"></a>
+		<p class="services-delivery header">Гарантия</p>
+		<p class="services-delivery p">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
+	<div class="features-img">	
+		<img src="./img/garantie.png"  class="delivery-image" alt="картинка с garantie"/>
 	</div>
-	<div class="services-credit">
-		<a href="" class="services-credit">Кредит</a>
-		<p class="services-credit">Кредит</p>
-		<p class="services-credit">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-		<img src="./img/credit.png" alt="картинка с credit"/>
+	<div class="services-delivery">
+		<a href="" class="services-delivery"></a>
+		<p class="services-delivery header">Кредит</p>
+		<p class="services-delivery p">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+	</div>
+	<div class="features-img">
+		<img src="./img/credit.png"  class="delivery-image"  alt="картинка с credit"/>
 	</div-->
 </section><!--конец блок преимущества-->
 
@@ -396,8 +429,8 @@
 				</li>
 			</ul>
 		</div>
-		<p>Обратная связь: <br><a href="" class="bottom-info">mail@htmlacademy.ru</a></p>
-		<p>Разработано - <br><a href="https://htmlacademy.ru" class="bottom-info">htmlacademy.ru</a></p>
+		<p class="bottom-info-p">Обратная связь: <br><a href="" class="bottom-info">mail@htmlacademy.ru</a></p>
+		<p class="bottom-info-p">Разработано - <br><a href="https://htmlacademy.ru" class="bottom-info">htmlacademy.ru</a></p>
 	</div>
 </footer>
 

@@ -1,5 +1,5 @@
 body {
-  margin: 50;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -146,7 +146,7 @@ footer li {
 .placeholder-search {
   border-style: none;
   background-color: #293449;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
 }
 .placeholder-search::placeholder {
@@ -196,6 +196,7 @@ input {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  width: 960px;
 }
 .search {
   background-color: #32425c;
@@ -316,8 +317,7 @@ input {
   font-size: 18px;
 }
 
-.menu-3-ul
- {
+.menu-3-ul {
   background-color: #32425c;
   color: #fff;
   font-size: 16px;
@@ -328,10 +328,12 @@ input {
   display: flex;
   justify-content: space-between;
   width: 960px;
-  padding: 0 20px;
   margin: 0 auto;
   border-bottom: 3px solid #293449;
   box-sizing: border-box;
+}
+.menu-3-ul:last-child {
+  padding: 0 25px;
 }
 
 .menu-3-a {
@@ -399,16 +401,18 @@ input {
 .row-2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 250px;
+/*  justify-content: center;
+*/  width: 250px;
   display: flex;
   flex-direction: column;
 }
 .discount {
   background-color: #8ed78f;
+  margin: 10px 25px;
 }
 .delivery {
   background-color: #ffc047;
+  margin: 10px 25px;
 }
 
 /*popular items style*/
@@ -454,7 +458,7 @@ input {
 .popular-items.card {
   display: inline-block;
   width: 218px;
-  margin: 20px;
+  margin: 20px 12px;
   line-height: 20px;
   font-weight: bold;
   text-align: center;
@@ -532,8 +536,8 @@ input {
   margin-bottom: 7px;
   padding: 7px 0;
   background-color: #63a63e;
-  border: 3px solid #63a63e;
-  border-bottom-color: #367315;
+/*  border: 3px solid #63a63e;
+*/  border-bottom-color: #367315;
   border-radius:3px;
   color: white;
   font-size: 14px;
@@ -597,8 +601,32 @@ input {
   float: right;
 }
 .brand-logos {
+  width: 960px;
+  display: flex;
+
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.brand-logo {
+  width: 20%;
+  height: 50px;
+
+  outline: #f9f5f0 2px solid;
+  padding: 30px 20px;
+  width: 20%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*
+.brand-logos {
+  width: 960px;
+}
+.brand-logos-ul {
   padding: 20px 0 0 0;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   align-content: center;  
   justify-content: space-between;
@@ -607,6 +635,7 @@ input {
 .brand-logo {
   outline: #f9f5f0 2px solid;
   padding: 30px;
+  width: 20%;
   margin: 20px auto;
   display: flex;
   align-items: center;
@@ -615,9 +644,8 @@ input {
 .brand-logo-a {
   height: 95px;
   display: contents;
-}
+}*/
 .brand-logo-img {
-  width: 100%;
   height: auto;
 }
 /*features-style*/
@@ -625,18 +653,37 @@ input {
   padding: 30px 130px;
   background-color: #f4f8fa;
 }
-.features-list {
-  margin: 30px;
+/*/*.features-list {
+  /*margin: 30px;
   height: 200px;
   width: 240px;
   box-shadow: -28px 0px 24px -25px #000000 inset;
-}
+}*/
+.features-list-ul {
+  width: 200px;
+  box-shadow: -15px -1px 10px -9px #000000 inset;
+
+  padding: 10px 0;
+ } 
 .features-list-li {
   padding: 20px;
-  text-transform: uppercase;
+  font-family: "Cuprum";
+  text-transform: capitalize;
   font-size: 20px;
-  background-color: pink;
+  font-weight: bold;
+  background-color: #32425c;
+  color: rgb(255, 255, 255);
   outline: 1px solid black;
+}
+
+
+.activ {
+  background-color: #fff;
+  color: #32425c;  
+  position: relative;
+}
+.services-delivery {
+  padding: 0 0 0 30px;
 }
 .services-header .header {
   font-size: 30px;
@@ -660,7 +707,6 @@ input {
   text-transform: uppercase;
   line-height: 1;
   text-align: left;
-  margin: 20px;
 }
 .services-delivery .p {
   font-size: 14px;
@@ -668,7 +714,6 @@ input {
   color: rgb(0, 0, 0);
   line-height: 1;
   text-align: left;
-  margin: 20px;
 }
 .features-wrapper {
   display: flex;
@@ -723,12 +768,6 @@ input {
   margin: 5px 10px;}
 
 /*footer styles*/
-.footer-wrapper {
-  background: #eef3f8;
-  width: 100%;
-  line-height: 1.333;
-  font-size: 18px;
-}
 .footer-1{
   background-color: #32425c; 
   display: flex;
@@ -739,8 +778,7 @@ input {
 .footer-2 {
   background-color: #293449;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 20px;
 }
 .yellow-list-a:hover,
@@ -751,6 +789,9 @@ input {
   font-family: "Cuprum";
   color: rgba(241, 245, 247, 0.502);
 }
+.footer-smm {
+  margin-right: 80px;
+}
 .smm {
   border-radius: 50%;
   background-color: rgb(43, 42, 58);
@@ -759,7 +800,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-      margin-right: 10px;
+  margin-right: 10px;
 }
 .smm:hover,
 .smm:focus {
@@ -785,20 +826,18 @@ input {
   margin-left: 70px;
 }
 .footer-adress {
-/*  width: 26%;
-*/}
+  color: #fff;
+}
 .yellow-list,
 .white-list {
   padding: 0;
-
 }
-
-
 .footer-wrapper {
   font-size: 16px;
   font-family: "Cuprum";
   font-weight: normal;
-  color: rgb(241, 245, 247);
+  background: #eef3f8;
+  color: #fff;
 }
 
 .bottom-info {
@@ -813,9 +852,12 @@ input {
   color: #ee3643;
 }
 .footer-2-info {
-  width: 290px; 
+  width: 290px;
+  padding-right: 60px;
 }
-
+.bottom-info-p {
+  margin-right: 50px;
+}
 
 
 
@@ -833,7 +875,6 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
 
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
 }/*
 input[type="checkbox"] {
@@ -866,19 +907,22 @@ input[type="radio"] + label {
 .catalog-wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 50px;
-  position: relative;
+/*  margin: 50px;
+*/  position: relative;
 }
 
 .page-title {
   background-color: #f2f6f8;
   font-size: 20px;
-/*  line-height: 32px;
-*/  padding: 30px;
+  padding: 30px;
   text-transform: uppercase;
-  margin: 0 40px;
-}
+/*  margin: 0 40px;
+*/}
 
+.catalog-container {
+  width: 960px;
+  margin: 0 auto;
+}
 /*breadcrumbs styles*/
 .breadcrumbs {
   display: flex;
@@ -886,7 +930,7 @@ input[type="radio"] + label {
   flex-wrap: wrap;
   list-style: none;
   text-transform: uppercase;
-  margin: 20px;
+  margin: 20px 0;
 }
 .breadcrumbs li {
   position: relative;
@@ -1073,7 +1117,6 @@ input[type=radio] {
 
 /*стили сортировки*/
 .sortirovka {
-  width: 750px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1083,7 +1126,7 @@ input[type=radio] {
   font-size: 14px;
   border-radius: 7px;
   font-family: "PT Sans", sans-serif;
-  margin-left: 90px;
+  margin-left: 50px;
 }
 .sortirovka-p {
   color: #c5c5c5;
@@ -1110,8 +1153,8 @@ input[type=radio] {
 
 .catalog-list {
   list-style: none;
-  margin-left: 50px;
-}
+/*  margin-left: 40px;
+*/}
 .popular-items.card {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -1137,8 +1180,6 @@ input[type=radio] {
   padding: 10px;
   margin: 10px;
   display: flex;
-    margin-left: 50px;
-
 }
 .pagination-item a {
   color: #000000;
@@ -1182,8 +1223,8 @@ input[type=radio] {
 
 /* Модальное окно Товар добавлен */
 .modal-addtocart {
-/*display: none;
-*/
+display: none;
+
   margin: 0 auto;
   width: 620px;
   border-top: 5px solid #ee3643;
@@ -1347,7 +1388,6 @@ input[type=radio] {
 .login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
   border-color: #663d15;
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
@@ -1388,6 +1428,7 @@ input[type=radio] {
   position: absolute;
   top: 10%;
   left: 13%;
+  display: none;
 }
 
 /*Модальное окно Напишите Нам*/
@@ -1443,15 +1484,15 @@ display: none;
 .slider {
   position: relative;
   width: 620px;
-  margin: 25px;
-  background-color: white;
+/*  height: 300px;
+*/  margin: 10px 25px;
   background-color: #eeeeee;
 }
 
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 30px;
+  bottom: 40px;
   
   width: 160px;
   height: 12px;
@@ -1464,10 +1505,9 @@ display: none;
 .slider-controls i {
   position: relative;
   
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  padding: 8px;
+  width: 8px;
+  height: 8px;
+  padding: 10px;
   margin: 5px;
   background-color: #fff;
   border-radius: 50%;
@@ -1481,8 +1521,8 @@ display: none;
   top: 8px;
   left: 8px;
   
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   
   background: #ee3643;
   
@@ -1496,8 +1536,8 @@ display: none;
   left: 50%;
   top: 50%;
   
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   margin: -4px;
   
   background-color: #ee3643;
@@ -1512,15 +1552,17 @@ display: none;
 }
 
 .slider-item {
-  display: none;
+  display: grid;
   padding: 20px 0 60px 0;
 }
 .slider-item:nth-child(1) {
-  background-image: url("../img/slide1.jpg");
+  background: url("../img/slide1.jpg");
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: center center;
   display: block;
+  height: 100%;
 }
+
 .slider-item:nth-child(2) {
   background-image: url("./img/slide2.jpg");
   background-repeat: no-repeat;
@@ -1544,9 +1586,8 @@ display: none;
 }
 
 .slider-item-button.button {
-  display: block;
   width: 200px;
-  padding: 13px 0;
+  padding: 13px;
   margin: 0 0 0 20px;
   
   font-size: 16px;
@@ -1558,7 +1599,6 @@ display: none;
   
   background-color: #fb565a;
   border-radius: 3px;
-  border: none;
 }
 
 .button:hover,
@@ -1571,33 +1611,52 @@ display: none;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
-.slider-arrow {
+.slider-ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+.slider-li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 620px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+}
+
+.control_prev,
+.control_next {
+  position: absolute;
+  top: 40%;
+  display: block;
+  padding: 10px;
+  width: auto;
   cursor: pointer;
-  height: 45px;
-    width: 20px;
-    position: relative;
-    margin: 20px;
+  background: #2a2a2a;
+  opacity: 0.7;
 }
-.slider-arrow-top, 
-.slider-arrow-bottom {
-    background: #337AB7;
-    height: 10px;
-    left: -30px;
-    position: absolute;
-    top: 60px;
-    width: 45px;
+
+.control_prev:hover,
+.control_next:hover {
+  opacity: 1;
 }
-.slider-arrow-top {
-  top: 64px;
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
 }
-.slider-arrow-top {
-    transform: rotate(45deg);
-    transform-origin: bottom right;
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
 }
-.slider-arrow-bottom {
-    transform: rotate(-45deg);
-    transform-origin: top right;
-}
+
+
 
 /*стили слайдера*/
-
