@@ -1,6 +1,4 @@
-@charset 'UTF-8';
-
- @font-face {
+@font-face {
   font-family: 'symbols-technomart';
   src: url('../font/symbols-technomart.eot?22619757');
   src: url('../font/symbols-technomart.eot?22619757#iefix') format('embedded-opentype'),
@@ -47,7 +45,7 @@
 .icon-star:before { content: '\2605'; } /* '★' */
 .icon-check-off:before { content: '\2610'; } /* '☐' */
 .icon-check-on:before { content: '\2611'; } /* '☑' */
-.icon-youtube:before { content: '\f39e'; } /* '' */
+.icon-youtube:before { content: '\f39e'; }
 .icon-home:before { content: '🏠'; } /* '\1f3e0' */
 .icon-user:before { content: '👨'; } /* '\1f468' */
 .icon-phone:before { content: '📞'; } /* '\1f4de' */
